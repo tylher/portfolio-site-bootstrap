@@ -2,17 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 
-li{
-    list-style:none ;
+
+li {
+  list-style: none;
 }
 
-
-
-.card>img{
-    height: 222px;
+.headline {
+  position: relative;
+  min-height: 92vh;
 }
 
-.works>article{
-    width: 330px;
+.headline > img {
+  position: absolute;
 }
 
+.card > img {
+  height: 222px;
+}
+
+.works > article {
+  width: 330px;
+}
