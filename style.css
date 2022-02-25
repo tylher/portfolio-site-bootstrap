@@ -23,6 +23,10 @@ li {
   height: 222px;
 }
 
+footer{
+  margin-top: 100px !important;
+}
+
 @media screen and (max-width: 768px) {
   .headline {
     background: url("images/header-illsutration-mobile@2x.svg") no-repeat  center;
