@@ -15,14 +15,21 @@
 
     <title>My Portfolio</title>
   </head>
-  <body>
-    <header class="container-fluid">
-      <nav class="d-flex justify-content-center">
+  <body class="relative"> 
+    <header class="container-fluid p-0 position-relative">
+      <img
+        src="images/Header-llustration-desktop@2x.svg"
+        class="img-fluid p-0 m-0 d-none d-md-block"
+        alt=""
+      />
+      <nav class="d-flex mx-auto w-100 justify-content-center position-absolute d-none d-md-flex top-0">
         <ul class="nav fw-bold">
           <li class="nav-item">
             <a class="nav-link text-dark" href="#Portfolio">Portfolio</a>
           </li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#About">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#About">About</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="#Contact">Contact</a>
           </li>
@@ -31,38 +38,37 @@
     </header>
 
     <section
-      class="headline d-flex flex-column align-items-center container-fluid row text-center p-0 m-0"
-    >
-      <img
+      class="headline d-flex flex-column justify-content-md-center align-items-center container-fluid row text-center p-0 m-0 position-absolute top-0  gap-md-3 mt-lg-3 gap-lg-4 mt-xl-5">
+      <!-- <img
         src="images/Header-llustration-desktop@2x.svg"
         class="img-fluid p-0"
         alt=""
-      />
-      <h2 class="col-sm-12 px-5">
-        Hey there. I’m Mariane <br />
+      /> -->
+      <h1 class="col-sm-12 px-5">
+        Hey there. I’m Damola <br />
         <span class="text-success">I’m a software developer</span>
-      </h2>
+      </h1>
 
-      <p class="col-sm-12 col-md-8 col-lg-7 px-4">
+      <p class="col-sm-11 col-md-7 col-lg-6 text-wrap">
         I can help you build a product , feature or website Look through some of
         my work and experience! If you like what you see and have a project you
         need coded, don’t hestiate to contact me.
       </p>
-      <ul class="d-flex justify-content-center align-items-center p-0">
-        <li class="me-2">
+      <ul class="d-flex justify-content-center align-items-center gap-3 p-0">
+        <li class="">
           <a href="google.com"
             ><img src="images/angellist.png" alt="angellist icon"
           /></a>
         </li>
-        <li class="social me-2">
+        <li class="social ">
           <a href="#"><img src="images/github.png" alt="github icon" /></a>
         </li>
-        <li class="social me-2">
+        <li class="social ">
           <a href="#"
             ><img src="images/Linkedin-icon.png" alt="linkedin icon"
           /></a>
         </li>
-        <li class="social me-2">
+        <li class="social ">
           <a href="#"><img src="images/twitter.png" alt="twitter icon" /></a>
         </li>
         <li class="social">
@@ -70,160 +76,328 @@
         </li>
       </ul>
 
-      <a href="#" class="arrow"
+      <a href="#" class="arrow mt-5"
         ><img src="images/Disabled.png" alt="dropdown icon"
       /></a>
     </section>
 
     <section
-      class="my-works d-flex flex-column align-items-center justify-content-center text-center"
+      class="my-works  flex-column align-items-center justify-content-center text-center mt-5 "
     >
       <h2>My Recent Works</h2>
-      <div class="container-fluid ">
-        <div class="works row d-flex justify-content-center mx-auto">
-          <article class="card col-md-6 col-lg-4 m-2">
-            <img src="" alt="" />
-            <div class="card-body">
-              <h3>Multi-Post Stories Gain+Glory</h3>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">css</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">JavScript</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">html</li>
-              </ul>
-              <a href="" class="btn btn-md btn-success">See project</a>
+      <div class="container">
+        <div class="works row d-flex justify-content-center mx-auto col-md-12 col-sm-8">
+          <article class="p-2 col-md-6 col-lg-4 ">
+            <div class="card rounded-3 p-0 ">
+              <img class="bg-light bg-opacity-100" src="" alt="" />
+              <div class="card-body px-0">
+                <h3>Multi-Post Stories Gain+Glory</h3>
+                <ul class="d-flex p-0 m-0 flex-wrap justify-content-center mb-3">
+                  <li
+                    class="badge text-dark bg-light m-1 p-2 d-flex align-items-center"
+                  >
+                    Ruby on rails
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    JavScript
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    html
+                  </li>
+                </ul>
+                <a href="" class="btn btn-md btn-success">See project</a>
+              </div>
             </div>
           </article>
-          <article class="card col-md-6 col-lg-4 m-2">
-            <img src="" alt="" />
-            <div class="card-body">
-              <h3>Multi-Post Stories Gain+Glory</h3>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">css</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">JavScript</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">html</li>
-              </ul>
-              <a href="" class="btn btn-md btn-success">See project</a>
+          <article class="p-2 col-md-6 col-lg-4">
+            <div class="card rounded-3 p-0">
+              <img class="bg-light bg-opacity-100" src="" alt="" />
+              <div class="card-body px-0">
+                <h3>Multi-Post Stories Gain+Glory</h3>
+                <ul class="d-flex p-0 m-0 flex-wrap justify-content-center mb-3">
+                  <li
+                    class="badge text-dark bg-light m-1 p-2 d-flex align-items-center"
+                  >
+                    Ruby on rails
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    JavScript
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    html
+                  </li>
+                </ul>
+                <a href="" class="btn btn-md btn-success">See project</a>
+              </div>
             </div>
           </article>
-          <article class="card col-md-6 col-lg-4 m-2">
-            <img src="" alt="" />
-            <div class="card-body">
-              <h3>Multi-Post Stories Gain+Glory</h3>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">css</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">JavScript</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">html</li>
-              </ul>
-              <a href="" class="btn btn-md btn-success">See project</a>
+          <article class="p-2 col-md-6 col-lg-4">
+            <div class="card rounded-3 p-0">
+              <img class="bg-light bg-opacity-100" src="" alt="" />
+              <div class="card-body px-0">
+                <h3>Multi-Post Stories Gain+Glory</h3>
+                <ul class="d-flex p-0 m-0 flex-wrap justify-content-center mb-3">
+                  <li
+                    class="badge text-dark bg-light m-1 p-2 d-flex align-items-center"
+                  >
+                    Ruby on rails
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    JavScript
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    html
+                  </li>
+                </ul>
+                <a href="" class="btn btn-md btn-success ">See project</a>
+              </div>
             </div>
           </article>
-          <article class="card col-md-6 col-lg-4 m-2">
-            <img src="" alt="" />
-            <div class="card-body">
-              <h3>Multi-Post Stories Gain+Glory</h3>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">css</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">JavScript</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">html</li>
-              </ul>
-              <a href="" class="btn btn-md btn-success">See project</a>
+          <article class="p-2 col-md-6 col-lg-4">
+            <div class="card rounded-3 p-0">
+              <img class="bg-light bg-opacity-100" src="" alt="" />
+              <div class="card-body px-0">
+                <h3>Multi-Post Stories Gain+Glory</h3>
+                <ul class="d-flex p-0 m-0 flex-wrap justify-content-center mb-3">
+                  <li
+                    class="badge text-dark bg-light m-1 p-2 d-flex align-items-center"
+                  >
+                    Ruby on rails
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    JavScript
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    html
+                  </li>
+                </ul>
+                <a href="" class="btn btn-md btn-success">See project</a>
+              </div>
             </div>
           </article>
-          <article class="card col-md-6 col-lg-4 m-2">
-            <img src="" alt="" />
-            <div class="card-body card">
-              <h3>Multi-Post Stories Gain+Glory</h3>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">css</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">JavScript</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">html</li>
-              </ul>
-              <a href="" class="btn btn-md btn-success">See project</a>
+          <article class="p-2 col-md-6 col-lg-4">
+            <div class="card rounded-3 p-0">
+              <img class="bg-light bg-opacity-100" src="" alt="" />
+              <div class="card-body px-0">
+                <h3>Multi-Post Stories Gain+Glory</h3>
+                <ul class="d-flex p-0 m-0 flex-wrap justify-content-center mb-3">
+                  <li
+                    class="badge text-dark bg-light m-1 p-2 d-flex align-items-center"
+                  >
+                    Ruby on rails
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    JavScript
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    html
+                  </li>
+                </ul>
+                <a href="" class="btn btn-md btn-success">See project</a>
+              </div>
             </div>
           </article>
-          <article class="card col-md-6 col-lg-4 m-2">
-            <img src="" alt="" />
-            <div class="card-body">
-              <h3>Multi-Post Stories Gain+Glory</h3>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">css</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">JavScript</li>
-                <li class="badge text-dark bg-light m-1 d-flex align-items-center">html</li>
-              </ul>
-              <a href="" class="btn btn-md btn-success">See project</a>
+          <article class="p-2 col-md-6 col-lg-4">
+            <div class="card rounded-3 p-0">
+              <img class="bg-light bg-opacity-100" src="" alt="" />
+              <div class="card-body px-0">
+                <h3>Multi-Post Stories Gain+Glory</h3>
+                <ul class="d-flex p-0 m-0 flex-wrap justify-content-center mb-3">
+                  <li
+                    class="badge text-dark bg-light m-1 p-2 d-flex align-items-center"
+                  >
+                    Ruby on rails
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    JavScript
+                  </li>
+                  <li
+                    class="badge text-dark bg-light m-1 d-flex align-items-center"
+                  >
+                    html
+                  </li>
+                </ul>
+                <a href="" class="btn btn-md btn-success">See project</a>
+              </div>
             </div>
           </article>
-         
-        </div>
-      </div>
-    </section>
+
+        </section>
 
     <section class="container-fluid mx-0 my-5" id="About">
       <div class="d-inline-flex align-items-center flex-column gap-3 my-5">
         <h2 class="">About me</h2>
-        <p class="px-5 col-8 text-center">
-          I can help you build a product , feature or website Look through some of my work and experience! 
-          If you like what you see and have a project you need coded, 
-          don’t hestiate to contact me.
+        <p class="col-md-8 col-sm-10 text-center">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
         </p>
         <a href="#about-button" class="btn btn-success">Get My Resume</a>
       </div>
-      <div class="row d-flex justify-content-center">
-  
-        <ul class="about-card card col-lg-4 mx-2 d-flex gap-3 flex-column align-items-center bg-secondary bg-opacity-10">     
-            <li><img src="./images/icon-languages.svg" alt="Language-icon"></li>
-            <li class="d-flex gap-3 flex-column align-items-center">  
-              <h2>Languages</h2>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">JavScript</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Html</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">css</li>
-              </ul>
-            </li>
-            
-          </ul>
-        <ul class="about-card card col-lg-4 mx-2 d-flex gap-3 flex-column align-items-center bg-secondary bg-opacity-10">    
-            <li><img src="./images/icon-frameworks.svg" alt="Framework-icon"></li>
-            <li class="d-flex gap-3 flex-column align-items-center">
-              <h2>Frameworks</h2>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Bootstrap</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Ruby on rails</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">RSpec</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Capybara</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Selenium</li>
-              </ul>
-            </li>
-            
-          </ul>
-        <ul class="about-card card col-lg-4 mx-2 d-flex gap-3 flex-column align-items-center bg-secondary bg-opacity-10">    
-            <li><img src="./images/icon-skills.svg" alt="Skills-icon"></li>
-            <li class="d-flex gap-3 flex-column align-items-center">
-              <h2>Skills</h2>
-              <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Codekit</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">GitHub</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Codepen</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Gitlab</li>
-                <li class="badge text-success bg-light m-1 p-2 d-flex align-items-center">Terminal</li>
-              </ul>
-            </li>
-           
-          </ul>
-  
+      <div class="container col-md-12 col-sm-10">
+         <div class="row d-flex  justify-content-center">
+        <div class="p-2 col-lg-4 col-md-6 col-sm-8 "><ul
+          class="about-card card h-100 p-0 px-md-4 px-lg-4  d-flex gap-3 flex-column align-items-center bg-secondary bg-opacity-10 rounded-3"
+        >
+          <li><img src="./images/icon-languages.svg" alt="Language-icon" /></li>
+          <li class="d-flex gap-3 flex-column align-items-center">
+            <h2>Languages</h2>
+            <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                JavScript
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Ruby
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Html
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                css
+              </li>
+            </ul>
+          </li>
+        </ul></div>
+        
+        <div class="p-2 col-lg-4 col-md-6 col-sm-8"><ul
+          class="about-card card p-0 px-md-4 px-lg-4 d-flex gap-3 h-100 flex-column align-items-center bg-secondary bg-opacity-10 rounded-3"
+        >
+          <li>
+            <img src="./images/icon-frameworks.svg" alt="Framework-icon" />
+          </li>
+          <li class="d-flex gap-3 flex-column align-items-center">
+            <h2>Frameworks</h2>
+            <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Bootstrap
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Ruby on rails
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                RSpec
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Capybara
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Selenium
+              </li>
+            </ul>
+          </li>
+        </ul></div>
+        <div class="p-2 col-lg-4 col-md-6 col-sm-8"><ul
+          class="about-card card p-0 px-md-4 px-lg-3 h-100 d-flex gap-3 flex-column align-items-center bg-secondary bg-opacity-10 rounded-3"
+        >
+          <li><img src="./images/icon-skills.svg" alt="Skills-icon" /></li>
+          <li class="d-flex gap-3 flex-column align-items-center">
+            <h2>Skills</h2>
+            <ul class="d-flex p-0 m-0 flex-wrap justify-content-center">
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Codekit
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                GitHub
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Codepen
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Gitlab
+              </li>
+              <li
+                class="badge text-success bg-light m-1 p-2 d-flex align-items-center"
+              >
+                Terminal
+              </li>
+            </ul>
+          </li>
+        </ul></div>
+      </div>
+     
+        
       </div>
     </section>
     <section class="contact" id="Contact"></section>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
