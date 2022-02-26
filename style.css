@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.headline {
+  position: relative;
+  min-height: 92vh;
+}
+
+.headline > img {
+  position: absolute;
+  z-index: -1;
+}
+
+.about {
+  background: url("images/illustration-about\ me-1-desktop.svg") top right
+    no-repeat;
+  padding-top: 60px;
+}
+
+.about-background {
+  background: url("images/illustration-about-me-2-desktop.svg") bottom left;
+  background-repeat: no-repeat;
+}
+
+.card > img {
+  height: 222px;
+}
+
+.contact {
+  padding-bottom: 300px !important;
+  background: url("images/illustration-1-contact-form-desktop.svg") no-repeat 0%
+      100%,
+    url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
+    url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
+      right;
+}
+
+footer p {
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .headline {
+    background: url("images/header-illsutration-mobile@2x.svg") no-repeat center;
+    background-size: cover;
+    position: static !important;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contact {
+    background-image: url("./images/illustration-contact-form.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 0 !important;
+  }
+
+  .contact-intro {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 58px;
+  }
+
+  .about {
+    background: url("images/Mask-Group.svg") top right no-repeat;
+    padding-top: 40px;
+  }
+
+  .about-background {
+    background: url("images/illustration-2-about-me-mobile.svg") bottom left;
+    background-repeat: no-repeat;
+  }
+}
